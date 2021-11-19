@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/yonatan/CLionProjects/HW1
+CMAKE_SOURCE_DIR = /mnt/c/Users/yonatan/spl/spl/HW1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HW1.dir/depend.make
@@ -59,68 +59,81 @@ include CMakeFiles/HW1.dir/flags.make
 
 CMakeFiles/HW1.dir/main.cpp.o: CMakeFiles/HW1.dir/flags.make
 CMakeFiles/HW1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HW1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/main.cpp.o -c /mnt/c/Users/yonatan/CLionProjects/HW1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HW1.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/main.cpp.o -c /mnt/c/Users/yonatan/spl/spl/HW1/main.cpp
 
 CMakeFiles/HW1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/CLionProjects/HW1/main.cpp > CMakeFiles/HW1.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/spl/spl/HW1/main.cpp > CMakeFiles/HW1.dir/main.cpp.i
 
 CMakeFiles/HW1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/CLionProjects/HW1/main.cpp -o CMakeFiles/HW1.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/spl/spl/HW1/main.cpp -o CMakeFiles/HW1.dir/main.cpp.s
 
 CMakeFiles/HW1.dir/Studio.cpp.o: CMakeFiles/HW1.dir/flags.make
 CMakeFiles/HW1.dir/Studio.cpp.o: ../Studio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HW1.dir/Studio.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Studio.cpp.o -c /mnt/c/Users/yonatan/CLionProjects/HW1/Studio.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HW1.dir/Studio.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Studio.cpp.o -c /mnt/c/Users/yonatan/spl/spl/HW1/Studio.cpp
 
 CMakeFiles/HW1.dir/Studio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW1.dir/Studio.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/CLionProjects/HW1/Studio.cpp > CMakeFiles/HW1.dir/Studio.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/spl/spl/HW1/Studio.cpp > CMakeFiles/HW1.dir/Studio.cpp.i
 
 CMakeFiles/HW1.dir/Studio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW1.dir/Studio.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/CLionProjects/HW1/Studio.cpp -o CMakeFiles/HW1.dir/Studio.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/spl/spl/HW1/Studio.cpp -o CMakeFiles/HW1.dir/Studio.cpp.s
 
 CMakeFiles/HW1.dir/Workout.cpp.o: CMakeFiles/HW1.dir/flags.make
 CMakeFiles/HW1.dir/Workout.cpp.o: ../Workout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HW1.dir/Workout.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Workout.cpp.o -c /mnt/c/Users/yonatan/CLionProjects/HW1/Workout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HW1.dir/Workout.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Workout.cpp.o -c /mnt/c/Users/yonatan/spl/spl/HW1/Workout.cpp
 
 CMakeFiles/HW1.dir/Workout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW1.dir/Workout.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/CLionProjects/HW1/Workout.cpp > CMakeFiles/HW1.dir/Workout.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/spl/spl/HW1/Workout.cpp > CMakeFiles/HW1.dir/Workout.cpp.i
 
 CMakeFiles/HW1.dir/Workout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW1.dir/Workout.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/CLionProjects/HW1/Workout.cpp -o CMakeFiles/HW1.dir/Workout.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/spl/spl/HW1/Workout.cpp -o CMakeFiles/HW1.dir/Workout.cpp.s
 
 CMakeFiles/HW1.dir/Trainer.cpp.o: CMakeFiles/HW1.dir/flags.make
 CMakeFiles/HW1.dir/Trainer.cpp.o: ../Trainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HW1.dir/Trainer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Trainer.cpp.o -c /mnt/c/Users/yonatan/CLionProjects/HW1/Trainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HW1.dir/Trainer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Trainer.cpp.o -c /mnt/c/Users/yonatan/spl/spl/HW1/Trainer.cpp
 
 CMakeFiles/HW1.dir/Trainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW1.dir/Trainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/CLionProjects/HW1/Trainer.cpp > CMakeFiles/HW1.dir/Trainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/spl/spl/HW1/Trainer.cpp > CMakeFiles/HW1.dir/Trainer.cpp.i
 
 CMakeFiles/HW1.dir/Trainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW1.dir/Trainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/CLionProjects/HW1/Trainer.cpp -o CMakeFiles/HW1.dir/Trainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/spl/spl/HW1/Trainer.cpp -o CMakeFiles/HW1.dir/Trainer.cpp.s
 
 CMakeFiles/HW1.dir/Action.cpp.o: CMakeFiles/HW1.dir/flags.make
 CMakeFiles/HW1.dir/Action.cpp.o: ../Action.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HW1.dir/Action.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Action.cpp.o -c /mnt/c/Users/yonatan/CLionProjects/HW1/Action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HW1.dir/Action.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Action.cpp.o -c /mnt/c/Users/yonatan/spl/spl/HW1/Action.cpp
 
 CMakeFiles/HW1.dir/Action.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW1.dir/Action.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/CLionProjects/HW1/Action.cpp > CMakeFiles/HW1.dir/Action.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/spl/spl/HW1/Action.cpp > CMakeFiles/HW1.dir/Action.cpp.i
 
 CMakeFiles/HW1.dir/Action.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW1.dir/Action.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/CLionProjects/HW1/Action.cpp -o CMakeFiles/HW1.dir/Action.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/spl/spl/HW1/Action.cpp -o CMakeFiles/HW1.dir/Action.cpp.s
+
+CMakeFiles/HW1.dir/Customer.cpp.o: CMakeFiles/HW1.dir/flags.make
+CMakeFiles/HW1.dir/Customer.cpp.o: ../Customer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HW1.dir/Customer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW1.dir/Customer.cpp.o -c /mnt/c/Users/yonatan/spl/spl/HW1/Customer.cpp
+
+CMakeFiles/HW1.dir/Customer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW1.dir/Customer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/yonatan/spl/spl/HW1/Customer.cpp > CMakeFiles/HW1.dir/Customer.cpp.i
+
+CMakeFiles/HW1.dir/Customer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW1.dir/Customer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/yonatan/spl/spl/HW1/Customer.cpp -o CMakeFiles/HW1.dir/Customer.cpp.s
 
 # Object files for target HW1
 HW1_OBJECTS = \
@@ -128,7 +141,8 @@ HW1_OBJECTS = \
 "CMakeFiles/HW1.dir/Studio.cpp.o" \
 "CMakeFiles/HW1.dir/Workout.cpp.o" \
 "CMakeFiles/HW1.dir/Trainer.cpp.o" \
-"CMakeFiles/HW1.dir/Action.cpp.o"
+"CMakeFiles/HW1.dir/Action.cpp.o" \
+"CMakeFiles/HW1.dir/Customer.cpp.o"
 
 # External object files for target HW1
 HW1_EXTERNAL_OBJECTS =
@@ -138,9 +152,10 @@ HW1: CMakeFiles/HW1.dir/Studio.cpp.o
 HW1: CMakeFiles/HW1.dir/Workout.cpp.o
 HW1: CMakeFiles/HW1.dir/Trainer.cpp.o
 HW1: CMakeFiles/HW1.dir/Action.cpp.o
+HW1: CMakeFiles/HW1.dir/Customer.cpp.o
 HW1: CMakeFiles/HW1.dir/build.make
 HW1: CMakeFiles/HW1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable HW1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable HW1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HW1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +168,6 @@ CMakeFiles/HW1.dir/clean:
 .PHONY : CMakeFiles/HW1.dir/clean
 
 CMakeFiles/HW1.dir/depend:
-	cd /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/yonatan/CLionProjects/HW1 /mnt/c/Users/yonatan/CLionProjects/HW1 /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/HW1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/yonatan/spl/spl/HW1 /mnt/c/Users/yonatan/spl/spl/HW1 /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles/HW1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/HW1.dir/depend
 

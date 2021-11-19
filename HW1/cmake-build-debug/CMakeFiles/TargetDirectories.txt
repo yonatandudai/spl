@@ -1,3 +1,3 @@
-/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/HW1.dir
+/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles/HW1.dir

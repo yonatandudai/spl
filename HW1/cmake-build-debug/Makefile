@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/yonatan/CLionProjects/HW1
+CMAKE_SOURCE_DIR = /mnt/c/Users/yonatan/spl/spl/HW1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/yonatan/CLionProjects/HW1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/yonatan/spl/spl/HW1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ Action.s: Action.cpp.s
 Action.cpp.s:
 	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/Action.cpp.s
 .PHONY : Action.cpp.s
+
+Customer.o: Customer.cpp.o
+
+.PHONY : Customer.o
+
+# target to build an object file
+Customer.cpp.o:
+	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/Customer.cpp.o
+.PHONY : Customer.cpp.o
+
+Customer.i: Customer.cpp.i
+
+.PHONY : Customer.i
+
+# target to preprocess a source file
+Customer.cpp.i:
+	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/Customer.cpp.i
+.PHONY : Customer.cpp.i
+
+Customer.s: Customer.cpp.s
+
+.PHONY : Customer.s
+
+# target to generate assembly for a file
+Customer.cpp.s:
+	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/Customer.cpp.s
+.PHONY : Customer.cpp.s
 
 Studio.o: Studio.cpp.o
 
@@ -270,6 +297,9 @@ help:
 	@echo "... Action.o"
 	@echo "... Action.i"
 	@echo "... Action.s"
+	@echo "... Customer.o"
+	@echo "... Customer.i"
+	@echo "... Customer.s"
 	@echo "... Studio.o"
 	@echo "... Studio.i"
 	@echo "... Studio.s"
