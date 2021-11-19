@@ -12,6 +12,14 @@ OpenTrainer::OpenTrainer(int id, std::vector<Customer *> &customersList):BaseAct
 }
 
 void OpenTrainer::act(Studio &studio) {
+    Studio st0;
+    Trainer* my_trainer =  st0.getTrainer(trainerId);
+    my_trainer->openTrainer();
+    Studio st1;
+    vector<Workout> &opts = st1.getWorkoutOptions();
+    for (int i = 0; i < OpenTrainer::customers.size(); ++i) {
+        //now the customer needs to order the current workout of the Trainer
+    }
 
 }
 
@@ -39,9 +47,11 @@ string PrintWorkoutOptions::toString() const{
 
 
  PrintTrainerStatus ::PrintTrainerStatus(int id):BaseAction(),trainerId(id) {
-    //the trainer status(open/closed)
-    //list of customers
-    //list of orders done by each customers
+    //return:
+    //1) the trainer status(open/closed)
+    //2) list of customers
+    //3) list of orders done by each customers
+
     //vector<Customer*>lst = tr.getCustomers()
 
 }
