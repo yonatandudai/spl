@@ -4,69 +4,97 @@
 #include <fstream>
 #include <iostream>
 
- using namespace std;
+using namespace std;
 
-
-    Studio:: Studio() {
-    }
-
-
-    Studio:: Studio(const string &configFilePath){
-        ifstream studioFile(configFilePath);
+Studio ::Studio(const std::string &configFilePath): open(false) {
+    ifstream studioFile(configFilePath);
+    if (studioFile.is_open()) {
         string line;
-        vector<string> text_of_file;
-        vector<string> capacities;
-        while (!studioFile.eof()){
-            getline(studioFile,line);
-            if (line[0]=='#' ||line.empty()){
+        vector<string> textOfFile;
+        vector<int> capacities;
+        while (!studioFile.eof()) {
+            getline(studioFile, line);
+            if (line[0] == '#' || line.empty())
                 continue;
-            }
-            else {
-                text_of_file.push_back(line);
-            }
+            else
+                textOfFile.push_back(line);
         }
-
-        for (int i = 0; i < text_of_file.size(); ++i) {
-            if (i == 0){
-                stringstream my_num( text_of_file[0]);
+        for (int i = 0; i < textOfFile.size(); ++i) {
+            int wo_id = 0;
+            if (i == 0) {
+                stringstream my_num(textOfFile[0]);
                 my_num >> numOfTrainers;
             }
-            if (i==1){
-                string cap = text_of_file[1];
+            if (i == 1) {
+                string cap = textOfFile[1];
                 for (int j = 0; j < numOfTrainers; ++j) {
-                text_of_file[1].find(",");
-
-
-
-//
+                    int ind = cap.find(',');
+                    string sub = cap.substr(0, ind - 1);
+                    stringstream my_num(sub);
+                    my_num >> capacities[j];
+                    cap = cap.substr(ind + 1, cap.length() - 1);
                 }
+                for (int j = 0; j < capacities.size(); ++j) {
+                    Trainer* my_trainer = new Trainer(capacities[j]);
+                    my_trainer->setId(j);
+                    trainers.push_back(my_trainer);
+                }
+            } else {
+                string w = textOfFile[i];
+                int firstComma = w.find(',');
+                string name_of_workout = w.substr(0, firstComma-1);
+                w = w.substr(firstComma+1, w.length()-1);
+                int secComma = w.find(',');
+                string my_str = w.substr(0, secComma-1);
+                WorkoutType type_of_workout = Convert(my_str);
+                w = w.substr(secComma+1, w.length()-1);
+                int price_of_workout;
+                stringstream my_num (w);
+                my_num >> price_of_workout;
+                workout_options.push_back(Workout(wo_id, name_of_workout, price_of_workout, type_of_workout));
+                ++wo_id;
+
+                //need to initialize actionLog
+
             }
         }
+    }
+}
 
+void Studio::start() {
+    cout << "Studio is now open!" << endl ;
+}
 
-//                    studioFile.getline(line, 256);
-//            if (line[0] == '#' or line[0] == '\0') {
-//                continue;
-//
-//    string lineContents;
-//    while (!studioFile.eof()){
-//        getline(studioFile,lineContents);
-//
-//    }}}
+int Studio::getNumOfTrainers() const {
+    return numOfTrainers;
+}
 
+int Studio::getCustomersCount() const {
+    return customers_counter;
+}
 
+Trainer* Studio::getTrainer(int tid) {
+    if(tid >= 0 and tid < trainers.size()) {
+        return trainers[tid];
+    }
+    else {
+        throw invalid_argument("No such trainer exist");
+    }
+}
 
-        //
-//    ifstream inFile;
-//        while (file) {
+const vector<BaseAction*>& Studio::getActionsLog() const {}
 
-//            }
-//        }
-//        while (file){
-//            file.getline(line,256)
-//            int num_of_trainers =    }
-};
+vector<Workout>& Studio::getWorkoutOptions() {
+    return workout_options;
+}
 
-
+WorkoutType Studio:: Convert(std::string str){
+    if (str=="Anaerobic")
+        return ANAEROBIC;
+    if (str=="Mixed")
+        return MIXED;
+    if (str=="Cardio")
+        return CARDIO;
+}
 
 
